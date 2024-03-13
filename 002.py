@@ -1,5 +1,5 @@
 '''
-Estudo com f_strings
+Estudo com format
 '''
 
 
