@@ -1,5 +1,5 @@
 '''
-Estudo com format / imc
+Estudo com f-string / imc
 '''
 
 nome = str(input('Nome:'))
