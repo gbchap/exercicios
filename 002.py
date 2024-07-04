@@ -2,9 +2,13 @@
 Estudo com f-string / imc
 '''
 
-nome = str(input('Nome:'))
-altura = float(input('Altura em m:'))
-peso = int(input('Peso em kg:'))
+nome = input('Nome:')
+altura = input('Altura em m:')
+peso = input('Peso em kg:')
+
+str_nome = str(nome)
+fl_altura = float(altura)
+int_peso = int(peso)
 
 imc = peso / altura ** 2
 
