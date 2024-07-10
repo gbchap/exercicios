@@ -1,6 +1,6 @@
-'''
 # Operadores Lógicos pt.2 - OR (qualquer true define true)
-    #None = não valor
+#None = não valor
+'''
 
 entrada = input('[E]ntrar  [S]air: ')
 if entrada == 'E' or 'e':
