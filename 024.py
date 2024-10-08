@@ -27,6 +27,7 @@ while contador < 10:
 
 print('Acabou')
 '''
+
 #1
 #2     
 #3     
@@ -89,15 +90,26 @@ print(str) #9
 
 '''
 
+# while + continue
+
 contador = 0
 
-while contador < 10:
+while contador <= 100: 
      contador += 1 
      
-     if contador == 4:
+     if contador == 6:
+         print(f'não vou mostrar o {contador}')
+         continue
+     
+     if contador >= 10 and contador <= 27:
+         print(f'não vou mostrar o {contador}')
+         continue
+
+     print(contador)
+     
+     if contador == 40:
          break
      
-     print(contador)
     
 print('Acabou')
 
