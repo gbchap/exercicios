@@ -1,26 +1,30 @@
 alert('Boas-vindas ao jogo do número secreto!'); //cria um alerta
-let numeroSecreto = 5; //camelCase
+let numeroMaximo = 100
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1); //camelCase
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
 
 //enquanto
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e 10');
+    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
 
     if (numeroSecreto == chute) {
-        alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas!`);
+        break;
     } else {
-        if (numeroSecreto > chute) {
+        if (numeroSecreto > chute) {    
             alert(`O número secreto é maior que ${chute}`);
-        }
-        else {
+        } else {
             alert(`O número secreto é menor que ${chute}`);
         }
+        //mesma coisa de tentativas += 1
+        tentativas ++;
     }
-    //mesma coisa de tentativas += 1
-    tentativas ++;
+    
 }
+let palavraTentativa = tentativa > 1 ? 'tentativas' : 'tentativa';
+alert (`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!`)
+
 // live server (extensão que baixamos) faz com que não precise ficar 
 // reinicializando a pag pra testar o código
 
