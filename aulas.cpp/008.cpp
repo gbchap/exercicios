@@ -14,3 +14,30 @@
 //especifique os dados de entrada (parâmetros)
 //necessários para sua execução e defina se esta
 //tarefa produzirá ou não um resultado (retorno).
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+float calculaArea(float altura, float largura){
+    float area;
+    area = altura * largura;
+    return area;
+}
+
+float calculaVerniz(float area){
+    float latas;
+    latas = 3 * area;
+    return ceil(latas);
+}
+
+int main(){
+
+    float altura, largura, area;
+    cout << "Informe a altura e a largura do espaco: ";
+    cin >> altura >> largura;
+    cout << calculaVerniz(calculaArea(altura, largura));
+
+    return 0;
+}

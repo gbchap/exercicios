@@ -1,3 +1,7 @@
+/*
+exercício do moodle (atividade 4);
+*/
+
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -26,14 +30,10 @@ float decomposicao(int x){
     
     return 0;
 }
-
-
 int main()
 {
-   
     int x;
     cin >> x;
     cout << decomposicao(x);
-
     return 0;
 }
